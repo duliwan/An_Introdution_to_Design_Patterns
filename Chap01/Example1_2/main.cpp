@@ -12,7 +12,8 @@ int main()//int argc, char *argv[])
     string yourName;
 
     cout<<"What's your name?"<<flush;
-    cin>>yourName;
+//    cin>>yourName;
+    getline ( cin, yourName );//1.4.1 Exercises
 
     cout<<"What year were you born?"<<flush;
     cin>>BIRTHYEAR;
