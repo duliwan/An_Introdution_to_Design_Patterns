@@ -14,8 +14,8 @@ int main()//int argc, char *argv[])
     if(n>=0){
         long nfact=factorial(n);
         if (nfact<0){
-            cerr<<"Overflow error."
-               <<n<<" is to big."<<endl;
+            cerr<<"Overflow error:"
+               <<n<<" is too big."<<endl;
         }
         else{
             cout<<"The factorial of "<<n<<" is "<<nfact<<endl;
