@@ -1,4 +1,4 @@
-int factorial(long n)
+long factorial(long n)
 {
     long ans(1);
     for (long i=2; i<=n; ++i ){
