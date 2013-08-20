@@ -1,6 +1,6 @@
 #ifndef FACTORIAL_H
 #define FACTORIAL_H
 
-long factorial(long n);
+long long factorial(long n);
 
 #endif // FACTORIAL_H
