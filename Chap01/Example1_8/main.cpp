@@ -12,7 +12,7 @@ int main()//int argc, char *argv[])
     QString s1("This "), s2("is a "), s3("string.");
     s1+=s2;
     QString s4=s1+s3;
-    cout<<s4<<endl;
+    cout<<s4<<endl;  //why don't define "endl" with QTextStream
     cout<<"The length of that string is "<<s4.length()<<endl;
     cout<<"Enter a sentence with whitespaces: "<<endl;
     s2=cin.readLine();// mark
