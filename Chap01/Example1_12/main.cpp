@@ -21,8 +21,11 @@ int main()//int argc, char *argv[])
     string strval = strbuf.str();
     cout << strval;
 
+    cout << "Enter the filename for outf: ";
+    string filename_outf;
+    cin >> filename_outf;
     ofstream outf;
-    outf.open("mydata");
+    outf.open(filename_outf.c_str());
     outf << strval;
     outf.close();
 
