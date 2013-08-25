@@ -28,9 +28,12 @@ int main()//int argc, char *argv[])
 
 
     cout << "Read data form the file - watch for errors." << endl;
+    cout << "Enter the filename: ";
+    string filename;
+    cin >> filename;
     string newstr;
     ifstream inf;
-    inf.open("mydata");
+    inf.open(filename.c_str());
     if (inf){//Make sure the file exists before attempting to read.
         int lucky2;
         inf >> newstr >> lucky2;
