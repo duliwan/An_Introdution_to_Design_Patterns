@@ -22,9 +22,12 @@ int main()//int argc, char *argv[])
            << "pi: " << pi << endl
            << "e: " << e << endl;
 
-    cout << str << endl;
+    cout << str;
 
-    QFile data("mydata");
+    cout << "Enter the filename for out: " << endl;
+    QString filename_outf;
+    cin >> filename_outf;
+    QFile data(filename_outf);
     data.open(QIODevice::WriteOnly);
     QTextStream out(&data);
     out << str;
@@ -34,7 +37,8 @@ int main()//int argc, char *argv[])
     if(data.open(QIODevice::ReadOnly)) {
         QTextStream in(&data);
         int lucky2;
-        in >> newstr >> lucky2;
+//        in >> newstr >> lucky2;
+        in >> lucky2;
         if (lucky != lucky2)
             cerr << "ERROR! wrong " << newstr << lucky2 << endl;
         else
